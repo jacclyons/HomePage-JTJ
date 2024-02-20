@@ -1,1 +1,1 @@
-hey! testing out my website @ www.jacktojapan.com
+hey! testing out my website @ jacktojapan.com
