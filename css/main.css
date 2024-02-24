@@ -57,7 +57,9 @@ body {
 /* HEADER */
 .logo {
     text-align: center;
+    margin-left: -15px; /* Add left margin */
 }
+
 
 .logo img {
     max-width: 25%; /* Adjust the maximum width as needed */
@@ -70,21 +72,32 @@ body {
 
 /* MENU */
 nav {
-    text-align: center;
+    text-align: center; /* Align menu items to the left */
 }
 
 .menu {
-    list-style-type: none;
+    list-style-type: none; /* Removed the list style type */
     margin-bottom: 10px; /* Add margin to create space between menu and icons */
+    padding-left: 0; /* Remove default padding */
 }
 
 .menu li {
     display: inline-block;
-    margin-right: 50px; /* Adjust spacing between menu items */
+    position: relative; /* Ensure proper positioning of the divider */
+    margin-right: 20px; /* Adjust spacing between menu items */
 }
 
-.menu li:last-child {
-    margin-right: 0; /* Remove margin from last item */
+.menu li::after {
+    content: '|'; /* Display a vertical bar as the divider */
+    position: absolute;
+    top: 50%; /* Position it vertically centered */
+    right: -20%; /* Adjust the position as needed */
+    transform: translateY(-50%); /* Center it vertically */
+    color: #fff; /* Color of the divider */
+}
+
+.menu li:last-child::after {
+    display: none; /* Hide the divider for the last menu item */
 }
 
 .menu li a {
@@ -100,6 +113,7 @@ nav {
 .menu li a i {
     margin-right: 10px; /* Adjust as needed */
 }
+
 
 
 /* BANNER */
