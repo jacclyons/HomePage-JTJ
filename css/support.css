@@ -17,20 +17,24 @@ body, h1, h2, h3, p, ul, li {
     font-style: normal;
 }
 
+.neuton-regular {
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* general classes */
+.white-text {
+    color: white;
+}
+
 /* GLOBAL STYLES */
 html, body {
-    overflow: hidden; /* Prevent scrolling */
+    /* Removed overflow: hidden to enable scrolling */
     height: 100%; /* Set height to 100% of the viewport height */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items at the start */
-    margin-top: 50px; /* Offset from the top */
 }
-
-
-
 
 body {
     font-family: 'Micro 5', sans-serif;
@@ -40,26 +44,52 @@ body {
     background-image: url('../images/bg.gif'); /* Relative path */
     background-size: cover;
     background-position: center;
+    margin: 0;
     background-color: #fff; /* Fallback background color */
 }
 
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+/* Add a class for the content wrapper */
+.content-wrapper {
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+    margin: 20px auto; /* Center the block horizontally and add margin */
+    max-width: 800px; /* Set maximum width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
 
+/* Apply styles to the paragraph */
+p {
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; /* Set font size */
+    color: #C87270; /* Set text color */
+    line-height: 1.6; /* Set line height for better readability */
+    text-indent: 10%;
+
+}
+
+/* Adjust container width */
+.container {
+    max-width: 90%; /* Adjusted maximum width of the container */
+    margin: 20px auto; /* Add margin for spacing */
+}
+
+
 /* HEADER */
+
 .logo {
     text-align: center;
+    margin-bottom: 20px; /* Add margin at the bottom of the logo */
+
 }
 
 .logo img {
-    max-width: 25%; /* Adjust the maximum width as needed */
+    max-width: 25%; /* Adjusted maximum width of the logo */
     height: auto; /* Maintain the aspect ratio of the image */
     display: block; /* Ensure the image behaves as a block element */
     margin: 0 auto; /* Center the image horizontally */
-    padding-top: 8%; /* Add padding at the top */
+    padding-top: 8%;
 }
 
 /* MENU */
@@ -69,6 +99,8 @@ nav {
 
 .menu {
     list-style-type: none;
+    margin-bottom: 20px; /* Add margin at the bottom of the logo */
+
 }
 
 .menu li {
@@ -89,49 +121,8 @@ nav {
     color: #ccc;
 }
 
-/* BANNER */
-.banner {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-/* About section styles */
-.about {
-    padding: 50px 0;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    /* Add styles for screens with a maximum width of 768px (tablets and smaller screens) */
-    .logo img {
-        max-width: 50%;
-    }
-
-    .menu li {
-        margin-right: 10px;
-    }
-
-    .menu li:last-child {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Add styles for screens with a maximum width of 480px (mobile devices) */
-    .logo img {
-        max-width: 70%;
-    }
-
-    .menu li {
-        margin-right: 5px;
-    }
+/* About page specific styles */
+.about-text {
+    text-align: justify; /* Justify the text */
+    color: #C87270; /* Set text color */
 }
