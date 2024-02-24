@@ -28,6 +28,39 @@ body, h1, h2, h3, p, ul, li {
     color: white;
 }
 
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 10.5ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Micro 5", sans-serif; /* Change font family to Micro 5 */
+  font-size: 1em;
+  margin: 0 auto; /* Center the image horizontally */
+  color: white; /* Set text color to white */
+  background-color: #d99b9a;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 /* GLOBAL STYLES */
 html, body {
     /* Removed overflow: hidden to enable scrolling */
