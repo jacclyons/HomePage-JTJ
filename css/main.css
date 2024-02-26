@@ -17,6 +17,17 @@ body, h1, h2, h3, p, ul, li {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Zelda';
+    src: url('fonts/zelda.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ITCBen';
+    src: url('fonts/ITCBen.ttf') format('truetype');
+}
+
+
 
   /* custom styling for specific icons */
   .fa-brands {
@@ -38,10 +49,10 @@ html, body {
 
 
 body {
-    font-family: 'Micro 5', sans-serif;
-    font-weight: 400;
+    font-family: 'ITCBen', serif;
+    font-weight: 900;
     font-style: normal;
-    font-size: 200%;
+    font-size: 125%;
     background-image: url('../images/bg.gif'); /* Relative path */
     background-size: cover;
     background-position: center;
