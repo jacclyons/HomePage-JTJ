@@ -23,6 +23,17 @@ body, h1, h2, h3, p, ul, li {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Zelda';
+    src: url('fonts/zelda.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ITCBen';
+    src: url('fonts/ITCBen.ttf') format('truetype');
+}
+
+
 /* general classes */
 .white-text {
     color: white;
@@ -42,7 +53,7 @@ html, body {
     height: 100%; /* Set height to 100% of the viewport height */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-        justify-content: center; /* Center horizontally */
+    justify-content: center; /* Center horizontally */
 
 }
 
