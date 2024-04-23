@@ -1,3 +1,9 @@
+@media screen and (orientation: landscape) {
+  html, body {
+    overflow: auto; /* Enable overflow scrolling */
+  }
+}
+
 /* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
