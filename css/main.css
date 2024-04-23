@@ -170,7 +170,7 @@ nav {
     width: 70%;
     background-color: #fff;
     overflow: hidden;
-    margin: 20px auto; /* Center the progress bar horizontally and add some margin */
+    margin: 10px auto; /* Center the progress bar horizontally and add some margin */
 }
 
 .progress {
